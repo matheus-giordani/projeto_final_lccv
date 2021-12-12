@@ -1,0 +1,120 @@
+<div class="card">
+
+    <div class="card-header">
+        <div class="d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+                <h5 class="card-title">Bens</h5>
+
+            </div>
+
+            <button type="button" class="btn btn-primary btn-sm">
+                <i class="bi bi-plus-lg"></i>
+
+
+
+            </button>
+
+
+        </div>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <!-- nome das colunas -->
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Tombamento</th>
+                <th scope="col">Produto</th>
+                <th scope="col">valor</th>
+                <th scope="col">Itens</th>
+
+            </tr>
+        </thead>
+        <!--conteudo das linhas -->
+        <tbody>
+            <tr>
+
+                <th>1</th>
+                <th>2021981654</th>
+                <th>Produto 1</th>
+                <th>10.00</th>
+
+                <th>
+                    <button class="btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#cadastroModal">
+
+                        <i class="bi bi-search "></i>
+                    </button>
+                </th>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">TOTAL</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>{{somaTotal}}</th>
+
+
+            </tr>
+        </tfoot>
+    </table>
+
+</div>
+
+
+
+
+
+
+<!-- Modal cadastro -->
+<div class="modal fade" id="cadastroModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Visualizar Bem</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="col ps-2">
+                    <div class="row" style="font-weight: bolder;">
+
+                        Estado
+
+
+                    </div>
+                    <div class="row">
+                        Bom
+                    </div>
+
+                </div>
+                <div class="col ps-2 pt-2">
+                    <div class="row" style="font-weight: bolder;">
+
+                        Situação de uso
+
+
+                    </div>
+                    <div class="row">
+                        Em uso
+                    </div>
+
+                </div>
+                <div class="col ps-2 pt-2">
+                    <div class="row" style="font-weight: bolder;">
+
+                        Marca
+
+
+                    </div>
+                    <div class="row">
+                        Marca 1
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

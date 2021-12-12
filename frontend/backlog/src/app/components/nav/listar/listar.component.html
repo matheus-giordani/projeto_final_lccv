@@ -1,0 +1,87 @@
+<div class="d-flex flex-column flex-fill">
+    <div class="container-fluid mt-1">
+
+        <!-- tela de navegação-->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item "><a href="index.html">Inicio</a></li>
+                <li class="breadcrumb-item " aria-current="page">contratos</li>
+
+            </ol>
+        </nav>
+
+        <!-- fim tela de navegação -->
+        <!-- conteudo do listar -->
+        <div class="card">
+
+            <div class="card-header">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+
+                        <h5 class="card-title">Listagem de contrato</h5>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="card-body">
+
+
+
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary" routerLink="/cadastrar">Adicionar</button>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+
+                                <th scope="col">Número</th>
+                                <th scope="col">Prestador</th>
+                                <th scope="col">Valor</th>
+
+
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let f of dadosTabela let i=index">
+                                <th scope="row">{{ f.Numero }}</th>
+                                <td>{{ f.Prestador }}</td>
+                                <td>{{ f.Valor }}</td>
+                                <td>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        <i class="bi bi-pencil-square"></i>
+
+
+                                    </button>
+                                    <button class="btn btn-danger"><i class="bi bi-trash-fill"></i></button>
+                                </td>
+
+
+                            </tr>
+
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+
+
+
+
+
+
+            </div>
+            <!-------------------------------------------- fim do escopo do site !------------------------------------------------------------------>
+        </div>
+    </div>
+</div>
+
+<!-- offcanvas -->
+
+<!-- Button trigger modal -->

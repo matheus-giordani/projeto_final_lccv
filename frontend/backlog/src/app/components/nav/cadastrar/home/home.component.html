@@ -1,0 +1,90 @@
+<div class="d-flex flex-column flex-fill">
+    <div class="container-fluid mt-1">
+
+        <!-- tela de navegação-->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item "><a href="index.html">Inicio</a></li>
+                <li class="breadcrumb-item " aria-current="page">contratos</li>
+                <li class="breadcrumb-item " aria-current="page">Cadastrar</li>
+            </ol>
+        </nav>
+
+        <!-- fim tela de navegação -->
+        <!-- formulario -->
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">Cadastrar contrato</h5>
+
+            </div>
+            <div class="card-body">
+                <!-- tela de navegação do conteudo -->
+                <!-- navegação da tela de navegação-->
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="geral-tab" data-bs-toggle="tab" data-bs-target="#geral"
+                            type="button" role="tab" aria-controls="geral" aria-selected="true">Geral</button>
+
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="item-tab" data-bs-toggle="tab" data-bs-target="#item" type="button"
+                            role="tab" aria-controls="item" aria-selected="true">Bens</button>
+
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="projetos-tab" data-bs-toggle="tab" data-bs-target="#projetos"
+                            type="button" role="tab" aria-controls="projetos" aria-selected="true">Observações</button>
+
+                    </li>
+
+                </ul>
+                <!-- conteudo da tela de navegação -->
+                <div class="tab-content mt-2" id="myTabContent">
+                    <!-- *ABA GERAL* -->
+                    <div class="tab-pane fade show active" id="geral" role="tabpanel" aria-labelledby="geral-tab">
+
+                        <app-geral></app-geral>
+
+                    </div>
+                    <!-- *ABA ITEM*-->
+                    <div class="tab-pane fade" id="item" role="tabpanel" aria-labelledby="item-tab">
+                        <app-listar></app-listar>
+                    </div>
+                    <!-- *ABA PROJETOS* -->
+                    <div class="tab-pane fade" id="projetos" role="tabpanel" aria-labelledby="projetos-tab">
+                        <app-projetos></app-projetos>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+                <!-- fim do conteudo da tela de navegação -->
+            </div>
+            <!-- fim da tela de navegação do conteudo -->
+
+
+        </div>
+    </div>
+    <!-- fim formulario -->
+    <!-- rodape do formulario -->
+    <div class="card-footer">
+        <div id="liveAlertPlaceholder"></div>
+        <div class="d-flex justify-content-end">
+            <div class="btn-group gap-2" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary rounded">Voltar</button>
+
+                <button type="button" class="btn btn-primary rounded" id="liveAlertBtn">Enviar</button>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- fim do rodape do formulario  -->
+
+</div>

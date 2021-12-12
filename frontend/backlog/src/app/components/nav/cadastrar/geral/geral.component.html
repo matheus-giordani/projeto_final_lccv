@@ -1,0 +1,60 @@
+<div class="tab-pane fade show active" id="geral" role="tabpanel" aria-labelledby="geral-tab">
+    <!-- inicio formulario -->
+    <form (ngSubmit)="onSubmit()">
+        <!-- primeira linha do formulario -->
+        <div class="row g-3">
+            <div class="col">
+                <label for="numero" class="form-label">Número</label>
+                <input type="number" class="form-control" id="numero" disabled>
+            </div>
+            <div class="col">
+                <label for="fornecedor" class="form-label">Fornecedor(razão social)</label>
+                <select name="fornecedor" class="form-control">
+                    <option value="choose">Escolha uma opção</option>
+                    <option value="fornecedor_1">fornecedor 1</option>
+                    <option value="fornecedor_2">fornecedor 2</option>
+                    <option value="fornecedor_3">fornecedor 3</option>
+                    <option value="fornecedor_4">fornecedor 4</option>
+                </select>
+            </div>
+            <div class="col">
+                <label for="nota_fiscal" class="form-label">Nota fiscal</label>
+                <input type="number" class="form-control" id="nota_fiscal">
+            </div>
+
+        </div>
+        <!--fim da primeira linha do formulario -->
+        <!-- segunda linha do formulario -->
+        <div class="row g-3 pt-3 ">
+            <div class="col">
+                <label for="item_NotaFiscal" class="form-label">Item da Nota fiscal</label>
+                <input type="text" class="form-control" id="item_NotaFiscal">
+            </div>
+            <div class="col">
+                <label for="quantidade_vinculada" class="form-label">Quantidade vinculada</label>
+                <input type="number" class="form-control" id="quantidade_vinculada" disabled>
+            </div>
+
+            <div class="col">
+                <label for="quantidade_disponivel" class="form-label">Quantidade disponivel</label>
+                <input type="number" class="form-control" id="quantidade_disponivel" disabled>
+
+            </div>
+        </div>
+
+
+
+
+        <!-- fim da segunda linha do formulario -->
+        <div class="row g-3 mt-4">
+            <button type="submit" class="btn btn-primary" routerLink="/listar">
+                <!--condição se formulario geral não for valido disabilitar -->
+                Submit
+            </button>
+
+
+
+
+        </div>
+    </form>
+    <!-- fim formulario -->

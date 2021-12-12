@@ -1,0 +1,27 @@
+<form [formGroup]="itensForm" (ngSubmit)="onSubmit()">
+    <!-- primeira linha do formulario -->
+    <div class="row g-3">
+        <div class="col">
+            <label for="servico" class="form-label">Serviço</label>
+            <input type="text" class="form-control" id="servico" formControlName="servico">
+        </div>
+        <div class="col">
+            <label for="quantidade" value="0" class="form-label">Quantidade</label>
+            <input type="number" class="form-control" id="quantidade" formControlName="quantidade">
+        </div>
+
+
+        <div class="col">
+            <label for="valor" value="0" class="form-label ">Valor Unitário</label>
+
+            <input type="number" class="form-control " id="valor" formControlName="valor_unitario">
+
+        </div>
+
+
+    </div>
+    <div class="pt-3">
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+    </div>
+</form>
