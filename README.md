@@ -5,7 +5,7 @@
 Esse backlog é responsavel pelo crud de notas fiscais, bens, despesas, fornecedores e fazendo o gerencimante das ligações entre cada item citado.
 
 
-## back-end
+## :closed_book: back-end
 
 ![](https://github.com/matheus-giordani/projeto_final_lccv/blob/main/control.png)
 
@@ -18,16 +18,18 @@ docker compose build
 docker compose up
 ```
 
-## Exemplo de uso
+## :pushpin: Exemplo de uso
 
 com esse back-end é possivel realizar todas a funções de post, get e afins de cada tabela criada 
 
-## dificuldades encontradas
+## :red_circle: dificuldades encontradas
  
 por ser um ambiente de desenvolvimento novo tive varias dificulades voltas a criação e mautenção do banco de dados atraves do django e 
 não obstante a esse primeiro problema a configuração do django foi custosa tambem
 
-## front-end
+## :closed_book: front-end
+
+![](https://github.com/matheus-giordani/projeto_final_lccv/blob/main/portal_teste.png)
 
 ### startando aplicação
 
@@ -35,27 +37,23 @@ não obstante a esse primeiro problema a configuração do django foi custosa ta
  ng serve
 ```
 
-## Exemplo de uso
+## :pushpin: Exemplo de uso
 
 usado para interação com usuario
 
-## dificuldades encontradas
+## :red_circle: dificuldades encontradas
  
-tudo no desenvolvimento com o angular demandou muito esforço para ser feito tive muitas dificuldaes com a dinamica de modulos e serviços e exports.
-nessa aplicação so ha a integração com a api do django para listar os bens cadastrados pelo backend não consegui implementar o cadastro ne edição e exclução pelo
+tudo no desenvolvimento com o angular demandou muito esforço para ser feito.Tive muita dificuldade com a dinamica de modulos, serviços e exports.
+nessa aplicação só há a integração com a API do django para listar os bens cadastrados pelo backend não consegui implementar o cadastro de edição e exclução pelo
 portal 
 
 
 
 
 
-## Meta
+## :telephone_receiver: informações pessoais
 
-Seu Nome – [@SeuNome](https://twitter.com/...) – SeuEmail@exemplo.com
-[![texto alternativo][1.1]][1]
-
-[1]: http://www.twitter.com/meunome
-[1.1]: 
+Matheus Giordani – [@giordani_matheus](https://www.instagram.com/giordani_matheus/) – matheus.giordanioliveira@gmail.com
 
 
 
