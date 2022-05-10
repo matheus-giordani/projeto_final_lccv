@@ -9,6 +9,9 @@ Esse backlog é responsavel pelo crud de notas fiscais, bens, despesas, forneced
 
 ![](https://github.com/matheus-giordani/projeto_final_lccv/blob/main/control.png)
 
+## Modelo ER
+![](https://github.com/matheus-giordani/projeto_final_lccv/blob/main/DER%20-%20Patrim%C3%B4nio_page-0001.jpg)
+
 ### Instalação
 
 ```sh
